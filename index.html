@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Library</h1>
+
+        <!-- Book List -->
+        <div class="book-list">
+            <h2>Books in Stock</h2>
+            <ul id="book-list">
+                <!-- Books will be displayed here -->
+                <!-- Example: <li>Book Title by Author - 300 pages [Available] <button class="remove-btn">Remove</button></li> -->
+            </ul>
+        </div>
+
+        <!-- Add Book Form -->
+        <div class="add-book">
+            <h2>Add a New Book</h2>
+            <form id="add-book-form">
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="number" id="pages" placeholder="Number of Pages" required>
+                <select id="status" required>
+                    <option value="" disabled selected>Book Status</option>
+                    <option value="Available">Available</option>
+                    <option value="Unavailable">Unavailable</option>
+                </select>
+                <button type="submit" id="submitBtn">Add Book</button>
+            </form>
+        </div>
+
+        <!-- Remove Book Form -->
+        <div class="remove-book">
+            <h2>Remove a Book</h2>
+            <form id="remove-book-form">
+                <input type="text" id="remove-title" placeholder="Book Title" required>
+                <button type="submit">Remove Book</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
